@@ -1,10 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Il mio sito</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Bella Napoli</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .pizza {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Ciao!</h1>
-    <p>Questo è il mio primo sito.</p>
+
+<header>
+    <h1>Pizzeria Bella Napoli</h1>
+    <p>Pizza artigianale cotta nel forno a legna</p>
+
+    <a href="#contatti" class="btn">
+        Prenota un tavolo
+    </a>
+</header>
+
+<nav>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#menu">Menù</a>
+    <a href="#contatti">Contatti</a>
+</nav>
+
+<section id="chi-siamo">
+    <h2>Chi siamo</h2>
+
+    <p>
+        Dal 1998 prepariamo pizze con ingredienti freschi,
+        impasti a lunga lievitazione e forno a legna.
+    </p>
+</section>
+
+<section id="menu">
+    <h2>Le nostre pizze</h2>
+
+    <div class="menu">
+
+        <div class="pizza">
+            <h3>Margherita</h3>
+            <p>Pomodoro, mozzarella, basilico</p>
+            <strong>€8</strong>
+        </div>
+
+        <div class="pizza">
+            <h3>Diavola</h3>
+            <p>Pomodoro, mozzarella, salame piccante</p>
+            <strong>€10</strong>
+        </div>
+
+        <div class="pizza">
+            <h3>Quattro Formaggi</h3>
+            <p>Mozzarella, gorgonzola, fontina, parmigiano</p>
+            <strong>€11</strong>
+        </div>
+
+        <div class="pizza">
+            <h3>Capricciosa</h3>
+            <p>Pomodoro, mozzarella, prosciutto, funghi, olive</p>
+            <strong>€12</strong>
+        </div>
+
+    </div>
+</section>
+
+<section id="contatti">
+    <h2>Contatti</h2>
+
+    <p>📍 Via Roma 123, Milano</p>
+    <p>📞 02 12345678</p>
+    <p>🕒 Aperto tutti i giorni 18:00 - 23:30</p>
+</section>
+
+<footer>
+    © 2026 Pizzeria Bella Napoli
+</footer>
+
 </body>
 </html>
